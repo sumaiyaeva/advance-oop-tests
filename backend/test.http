@@ -1,0 +1,36 @@
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "Eva",
+  "email": "eva@uiu.ac.bd"
+}
+
+###
+GET http://localhost:8080/students
+
+###
+GET http://localhost:8080/students/1
+
+###
+PUT http://localhost:8080/students/1
+Content-Type: application/json
+
+{
+  "name": "Eva Updated",
+  "email": "eva.updated@uiu.ac.bd"
+}
+
+###
+PATCH http://localhost:8080/students/1
+Content-Type: application/json
+
+{
+  "email": "eva.patch@uiu.ac.bd"
+}
+
+###
+DELETE http://localhost:8080/students/1
+
+###
+GET http://localhost:8080/students
